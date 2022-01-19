@@ -16,7 +16,7 @@ funcionPrincipal()
         Escribir cadenaFinal//0 + " * 10 elevado a la potencia " + 0
         k1 <-- k1/10
         j = j+1
-  Fin Para
+  Fin Mientras
 
 
 Fin funcionPrincipal
