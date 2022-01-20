@@ -1,41 +1,31 @@
+1. Inicio
+2. funcionPrincipal()
+3. 	k, i[0-n] <-- 1920
+4. 	k1, i[0-n]
+5. 	k1 <-- k
+6. 	j, i[0-n]
+7. 	j <-- 0
+8. 	residuo, i[0-n]
+9. 	cadenaFinal, x(150)[{a-z},{A-Z},{BS}]
+10. 	Mientras (0 < k1  ) haga          			
 
-Inicio
-funcionPrincipal()
-  k, i[0-n] <-- 1920
-  k1, i[0-n]
-  k1 <-- k
-  j, i[0-n]
-  j <-- 0
-  residuo, i[0-n]
-  cadenaFinal, x(150)[{a-z},{A-Z},{BS}]
+11.     	residuo <-- obtenerMOD (k1; 10)  		
+12.     	cadenaFinal<-- obtenerCadena (residuo ; j) 	
+13.     	Escribir cadenaFinal				
+14.     	k1 <-- k1/10					
+15.     	j = j+1  
+16. 	Fin Mientras
+17. Fin funcionPrincipal
 
+18. funcion obtenerMOD(i ,k1; i, b): i 
+19. 	residuo, i[0-n]
+20. 	residuo <-- k1 MOD b          
+21. 	return residuo                
+22. fin funcion obtenerMOD
 
-  Mientras (j < k1  ) haga          //0<1920 v
-        residuo <-- obtenerMOD (k1; 10)  // (1920 ; 10) = 0
-        cadenaFinal<-- obtenerCadena (residuo ; j) // (0;0)
-        Escribir cadenaFinal//0 + " * 10 elevado a la potencia " + 0
-        k1 <-- k1/10
-        j = j+1
-  Fin Mientras
-
-
-Fin funcionPrincipal
-
-
-
-funcion obtenerMOD(i ,k1; i, b): i //(1920; 10)
-    residuo, i[0-n]
-    residuo <-- k1 MOD b          //1920 MOD 10 = 0
-    return residuo                // 0
-
-fin funcion obtenerMOD
-
-funcion obtenerCadena (i, a; i, b): x        // (0;0)
-    cadenaSF, x(150)[{a-z},{A-Z},{BS}]
-    cadenaSF <-- a + " * 10 elevado a la potencia " + b
-              //0 + " * 10 elevado a la potencia " + 0
-
-    return cadenaSF
-fin funcion obtenerCadena
-
-Fin
+23. funcion obtenerCadena (i, a; i, b): x        
+24. 	cadenaSF, x(150)[{a-z},{A-Z},{BS}]
+25. 	cadenaSF <-- a + " * 10 elevado a la potencia " + b						           
+26. 	return cadenaSF
+27. fin funcion obtenerCadena
+28. Fin

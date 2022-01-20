@@ -1,0 +1,48 @@
+1. Inicio
+2. funcionPrincipal()
+3. 	k, i[0-n] <-- 1920
+4. 	k1, i[0-n]
+5. 	k1 <-- k
+6. 	j, i[0-n]
+7. 	j <-- 0
+8. 	residuo, i[0-n]
+9. 	cadenaFinal, x(150)[{a-z},{A-Z},{BS}]
+
+
+10. 	Mientras (0 < k1  ) haga          			// 0<1920 V // 0<192 V // 0<19 V // 0<1 V // 0<0 F
+
+11.     	residuo <-- obtenerMOD (k1; 10)  		// (1920 ; 10) = 0	
+							// (192 ; 10)= 2 
+							// (19 ; 10)= 9
+							// (1 ; 10)=
+12.     	cadenaFinal<-- obtenerCadena (residuo ; j) 	// (0;0) // (2;1) // (9;2) // (1;10)
+13.     	Escribir cadenaFinal				// 0 + " * 10 elevado a la potencia " + 0
+							// 2 + " * 10 elevado a la potencia " + 1
+							// 9 + " * 10 elevado a la potencia " + 2 
+							// 1 + " * 10 elevado a la potencia " + 3
+
+14.     	k1 <-- k1/10					// 1920/10 = 192 // 192/10 = 19 // 19/10 = 1 // 1/10 = 0  // Me da números enteros la división, porque declaramos las variables como enteros.
+15.     	j = j+1 // 0+1 = 1 // 1+1 = 2 // 2+1 = 3 // 
+16. 	Fin Mientras
+
+
+17. Fin funcionPrincipal
+
+
+
+18. funcion obtenerMOD(i ,k1; i, b): i //(1920; 10) // (192;10) // (19;10) // 
+19. 	residuo, i[0-n]
+20. 	residuo <-- k1 MOD b          //1920 MOD 10 = 0 // 192 MOD 10 = 2 // 19 MOD 10 = 9 // 
+21. 	return residuo                // 0 // 2 // 9 // 
+22. 	fin funcion obtenerMOD
+
+23. funcion obtenerCadena (i, a; i, b): x        // (0;0) // (2;1) // (9;2) // (1;10) 
+24. 	cadenaSF, x(150)[{a-z},{A-Z},{BS}]
+25. 	cadenaSF <-- a + " * 10 elevado a la potencia " + b		// 0 + " * 10 elevado a la potencia " + 0
+								// 2 + " * 10 elevado a la potencia " + 1 
+								// 9 + " * 10 elevado a la potencia " + 2 
+								// 1 + " * 10 elevado a la potencia " + 3            
+
+26. 	return cadenaSF
+27. fin funcion obtenerCadena
+28. Fin
